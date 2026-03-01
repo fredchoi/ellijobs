@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="오랜경험과 노하우를 가진 개발자 Elli. AI 바이브코딩으로 ellipost.com 이메일 SaaS를 운영 중. 자동화 시스템과 SaaS 개발로 ellijobs 1인 그룹을 꾸려갑니다.">
+    <meta name="description" content="AI 시대의 1인 빌더 Elli. ellipost.com 이메일 SaaS 운영 중. AI와 함께 제품을 설계하고 빌드합니다. 1인 스튜디오 ellijobs.">
     <link rel="canonical" href="https://www.ellijobs.com/">
     <meta property="og:url" content="https://www.ellijobs.com/">
-    <title>Elli | ellijobs — 오랜경험과 노하우, AI 바이브코딩, SaaS 빌더</title>
+    <title>Elli | ellijobs — AI와 함께 빌드하는 1인 스튜디오</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +15,31 @@
   </head>
   <body>
     <div class="page">
+      <!-- Language Toggle -->
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">KR</button>
+
       <!-- Hero -->
       <section class="hero">
         <div class="hero-grid"></div>
         <div class="hero-content">
           <p class="hero-label">ellijobs</p>
-          <h1 class="hero-title">안녕하세요, <span class="accent">Elli</span>입니다</h1>
+          <h1 class="hero-title">
+            <span class="lang-ko">안녕하세요, <span class="accent">Elli</span>입니다</span>
+            <span class="lang-en">Hi, I'm <span class="accent">Elli</span></span>
+          </h1>
           <p class="hero-desc">
-            오랜경험과 노하우로 AI 바이브코딩하여 SaaS를 만듭니다.<br class="br-desktop">
-            ellipost.com 이메일 SaaS 운영 중 · 자동화 시스템과 SaaS 개발로 ellijobs 1인 그룹을 꾸려갑니다.
+            <span class="lang-ko">
+              AI와 함께 제품을 설계하고, 직접 빌드합니다.<br class="br-desktop">
+              이메일 SaaS ellipost.com 운영 중 · 아이디어를 제품으로 만드는 1인 스튜디오 ellijobs.
+            </span>
+            <span class="lang-en">
+              I design and build products with AI.<br class="br-desktop">
+              Running email SaaS ellipost.com · Turning ideas into products as a solo studio, ellijobs.
+            </span>
           </p>
           <div class="hero-actions">
             <a href="https://ellipost.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">ellipost.com →</a>
-            <a href="#vision" class="btn btn-secondary">비전 보기</a>
+            <a href="#vision" class="btn btn-secondary">Vision →</a>
           </div>
         </div>
       </section>
@@ -35,22 +47,31 @@
       <!-- What I do -->
       <section class="section section-dark">
         <div class="container">
-          <h2 class="section-title">무엇을 하나요</h2>
+          <h2 class="section-title">What I Do</h2>
           <div class="cards">
             <div class="card">
-              <div class="card-icon">💻</div>
-              <h3 class="card-title">오랜경험과 노하우</h3>
-              <p class="card-desc">오랜 경험으로 견고한 시스템과 사용자 중심의 제품을 만듭니다.</p>
+              <div class="card-icon">🧠</div>
+              <h3 class="card-title">Product Thinking</h3>
+              <p class="card-desc">
+                <span class="lang-ko">문제를 정의하고, 핵심에 집중한 제품을 설계합니다. 군더더기 없는 구조를 만듭니다.</span>
+                <span class="lang-en">Define the problem, design with focus. Build lean structures that just work.</span>
+              </p>
             </div>
             <div class="card">
-              <div class="card-icon">✨</div>
-              <h3 class="card-title">AI 바이브코딩</h3>
-              <p class="card-desc">AI와 함께 빠르고 정확하게 코드를 작성하고 제품을 구현합니다.</p>
+              <div class="card-icon">⚡</div>
+              <h3 class="card-title">AI-Powered Build</h3>
+              <p class="card-desc">
+                <span class="lang-ko">AI를 동료처럼 활용해 빠르게 프로토타입하고, 실제 제품으로 완성합니다.</span>
+                <span class="lang-en">Prototype fast with AI as a co-builder, then ship real products.</span>
+              </p>
             </div>
             <div class="card">
               <div class="card-icon">🚀</div>
-              <h3 class="card-title">SaaS 빌더</h3>
-              <p class="card-desc">이메일 발송부터 자동화까지, 필요한 SaaS를 직접 설계하고 구축합니다.</p>
+              <h3 class="card-title">Ship & Operate</h3>
+              <p class="card-desc">
+                <span class="lang-ko">만들고 끝이 아니라, 직접 운영하며 개선합니다. 실사용자 피드백이 곧 다음 버전입니다.</span>
+                <span class="lang-en">Building is just the start. I run, iterate, and improve based on real user feedback.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -61,22 +82,31 @@
         <div class="container">
           <div class="ellipost-card">
             <div class="ellipost-main">
-              <p class="ellipost-label">현재 운영 중</p>
+              <p class="ellipost-label">Live Product</p>
               <h2 class="ellipost-title">
                 <a href="https://ellipost.com" target="_blank" rel="noopener noreferrer">ellipost.com</a>
               </h2>
               <p class="ellipost-desc">
-                이메일 발송 SaaS. 마케팅, 알림, 트랜잭션 이메일을 안정적으로 전달합니다.
-                API와 대시보드로 쉽게 연동하고 관리할 수 있습니다.
+                <span class="lang-ko">마케팅·알림·트랜잭션 이메일을 한 곳에서. API 연동과 대시보드로 누구나 쉽게 시작할 수 있는 이메일 인프라.</span>
+                <span class="lang-en">Marketing, notification, and transactional emails in one place. Email infrastructure anyone can start with API and dashboard.</span>
               </p>
               <a href="https://ellipost.com" target="_blank" rel="noopener noreferrer" class="ellipost-link">
-                ellipost.com 방문하기 <span aria-hidden="true">→</span>
+                <span class="lang-ko">바로 시작하기</span>
+                <span class="lang-en">Get Started</span>
+                <span aria-hidden="true">→</span>
               </a>
             </div>
             <div class="ellipost-tags">
-              <span class="tag-line">#</span> 이메일 발송 SaaS<br>
-              <span class="tag-line">#</span> API · 대시보드<br>
-              <span class="tag-line">#</span> 마케팅 · 알림
+              <span class="lang-ko">
+                <span class="tag-line">#</span> 이메일 발송 SaaS<br>
+                <span class="tag-line">#</span> API · 대시보드<br>
+                <span class="tag-line">#</span> 마케팅 · 알림
+              </span>
+              <span class="lang-en">
+                <span class="tag-line">#</span> Email SaaS<br>
+                <span class="tag-line">#</span> API · Dashboard<br>
+                <span class="tag-line">#</span> Marketing · Alerts
+              </span>
             </div>
           </div>
         </div>
@@ -85,15 +115,21 @@
       <!-- Vision -->
       <section id="vision" class="section section-dark">
         <div class="container container-center">
-          <h2 class="section-title">비전</h2>
+          <h2 class="section-title">Vision</h2>
           <p class="vision-desc">
-            자동화 시스템과 SaaS를 꾸준히 개발하여
-            <span class="accent">ellijobs 1인 그룹</span>을 이루는 것이 목표입니다.
+            <span class="lang-ko">
+              혼자서도 임팩트 있는 제품을 만들 수 있다고 믿습니다.
+              <span class="accent">AI와 자동화를 무기로</span>, 작지만 날카로운 SaaS를 계속 만들어갑니다.
+            </span>
+            <span class="lang-en">
+              I believe one person can build products that matter.
+              <span class="accent">Armed with AI and automation</span>, I keep shipping small but sharp SaaS products.
+            </span>
           </p>
           <div class="vision-tags">
-            <span class="pill">자동화 시스템</span>
-            <span class="pill">SaaS 개발</span>
-            <span class="pill">ellijobs 1인 그룹</span>
+            <span class="pill">Solo Builder</span>
+            <span class="pill">AI-First</span>
+            <span class="pill">Ship Fast</span>
           </div>
         </div>
       </section>
@@ -101,12 +137,13 @@
       <!-- CTA -->
       <section class="section">
         <div class="container container-narrow container-center">
-          <h2 class="section-title">함께 일해보고 싶으시다면</h2>
+          <h2 class="section-title">Let's Connect</h2>
           <p class="cta-desc">
-            SaaS 개발, 자동화, 이메일 인프라 등 문의는 ellipost.com을 통해 연락해 주세요.
+            <span class="lang-ko">SaaS 개발, 자동화, 이메일 인프라에 관심 있으시다면 편하게 연락주세요.</span>
+            <span class="lang-en">Interested in SaaS, automation, or email infrastructure? Let's talk.</span>
           </p>
           <a href="https://ellipost.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-            ellipost.com 방문 <span aria-hidden="true">→</span>
+            ellipost.com <span aria-hidden="true">→</span>
           </a>
         </div>
       </section>
@@ -119,6 +156,22 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      const toggle = document.getElementById('langToggle');
+      const html = document.documentElement;
+      const saved = localStorage.getItem('lang');
+      if (saved === 'ko') {
+        html.classList.add('is-ko');
+        toggle.textContent = 'EN';
+      }
+      toggle.addEventListener('click', () => {
+        const isKo = html.classList.toggle('is-ko');
+        toggle.textContent = isKo ? 'EN' : 'KR';
+        html.lang = isKo ? 'ko' : 'en';
+        localStorage.setItem('lang', isKo ? 'ko' : 'en');
+      });
+    </script>
   </body>
 </html>

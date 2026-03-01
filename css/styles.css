@@ -1,5 +1,37 @@
 /* ellijobs.com - Brand Landing Page */
 
+/* Language Toggle */
+.lang-toggle {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 100;
+  padding: 0.375rem 0.75rem;
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: rgba(39, 39, 42, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: #52525b;
+}
+
+/* Language visibility - default: English */
+.lang-ko { display: none; }
+.lang-en { display: inline; }
+
+html.is-ko .lang-ko { display: inline; }
+html.is-ko .lang-en { display: none; }
+
 :root {
   --bg-dark: #0a0a0c;
   --bg-section: #18181b;
