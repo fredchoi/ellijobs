@@ -1,0 +1,3 @@
+# apex → www (301 redirect, 2차 도메인 유지)
+https://ellijobs.com/*  https://www.ellijobs.com/:splat  301
+http://ellijobs.com/*   https://www.ellijobs.com/:splat  301

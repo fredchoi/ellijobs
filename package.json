@@ -1,0 +1,12 @@
+{
+  "name": "ellijobs",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler pages deploy . --project-name=ellijobs",
+    "add-domains": "bash scripts/add-domains.sh",
+    "setup-dns": "bash scripts/setup-dns.sh"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  }
+}
