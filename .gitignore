@@ -2,7 +2,7 @@
 .DS_Store
 Thumbs.db
 
-# Dependencies
+# Dependencies (npx serve 등 사용 시)
 node_modules/
 
 # Env (API 토큰 포함)

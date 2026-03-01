@@ -2,12 +2,6 @@
 
 Elli 브랜드 랜딩 페이지. 오랜경험과 노하우를 가진 개발자, AI 바이브코딩, ellipost.com 운영, ellijobs 1인 그룹 비전.
 
-## 배포 상태
-
-- **GitHub**: https://github.com/fredchoi/ellijobs
-- **Cloudflare Pages**: https://ellijobs.pages.dev ✅ (Elli 브랜드 페이지)
-- **도메인**: www.ellijobs.com, ellijobs.com → Pages에 연결하면 Elli 페이지 표시
-
 ## 구조
 
 ```
@@ -15,45 +9,31 @@ ellijobs/
 ├── index.html
 ├── 404.html
 ├── favicon.svg
-├── _redirects          # ellijobs.com → www.ellijobs.com 301
+├── _redirects       # ellijobs.com → www.ellijobs.com 301
 ├── css/styles.css
 ├── js/script.js
-├── .github/workflows/
-│   └── deploy.yml      # push → Cloudflare Pages 자동 배포
-├── scripts/
-│   ├── add-domains.sh
-│   └── setup-dns.sh
-└── package.json
+└── scripts/         # 도메인 설정용 (선택)
 ```
 
 ## 로컬 실행
 
 ```bash
 python3 -m http.server 8000
-# 또는
-npx serve .
 ```
 
-## 배포
+## 배포 (Cloudflare Pages Git 연동)
 
-### 자동 배포 (GitHub → Cloudflare Pages)
+순수 정적 페이지이므로 Cloudflare 대시보드에서 Git 저장소를 연결하면 됩니다.
 
-`main` 브랜치에 푸시하면 GitHub Actions가 자동으로 Cloudflare Pages에 배포합니다.
+1. [Workers & Pages](https://dash.cloudflare.com/?to=/:account/pages) → **Create** → **Pages** → **Connect to Git**
+2. **ellijobs** 저장소 선택
+3. 빌드 설정:
+   - **Framework preset**: None
+   - **Build command**: (비워두기)
+   - **Build output directory**: `/`
+4. **Save and Deploy**
 
-**필수: GitHub Secrets 설정**
-
-1. [ellijobs → Settings → Secrets and variables → Actions](https://github.com/fredchoi/ellijobs/settings/secrets/actions)
-2. **New repository secret** 클릭 후 추가:
-   - `CLOUDFLARE_API_TOKEN`: [API Tokens](https://dash.cloudflare.com/?to=/:account/api-tokens) → Create Token → **Edit Cloudflare Workers** 템플릿
-   - `CLOUDFLARE_ACCOUNT_ID`: 대시보드 우측 또는 [Find account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/)
-
-### 수동 배포
-
-```bash
-npm run deploy
-# 또는
-npx wrangler pages deploy . --project-name=ellijobs
-```
+이후 `main` 브랜치에 push 시 자동 배포됩니다. Secrets 없음.
 
 ## 도메인 연결
 
@@ -77,7 +57,7 @@ CLOUDFLARE_API_TOKEN=your_api_token \
 ./scripts/setup-dns.sh
 ```
 
-또는 `npm run setup-dns` (환경 변수 설정 후)
+(환경 변수 설정 후 `./scripts/setup-dns.sh` 실행)
 
 - **Account ID**: 대시보드 우측 또는 [Find account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/)
 - **API Token**: [API Tokens](https://dash.cloudflare.com/?to=/:account/api-tokens) → Create Token → **Account** (Zones Read, DNS Edit, Pages Edit)
