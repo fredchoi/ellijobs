@@ -2,6 +2,9 @@
 .DS_Store
 Thumbs.db
 
+# Dependencies
+node_modules/
+
 # Env (API 토큰 포함)
 .env
 

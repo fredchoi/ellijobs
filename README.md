@@ -4,6 +4,7 @@ Elli 브랜드 랜딩 페이지. 30년 경력 개발자, AI 바이브코딩, ell
 
 ## 배포 상태
 
+- **GitHub**: https://github.com/fredchoi/ellijobs
 - **Cloudflare Pages**: https://ellijobs.pages.dev ✅ (Elli 브랜드 페이지)
 - **도메인**: www.ellijobs.com, ellijobs.com → Pages에 연결하면 Elli 페이지 표시
 
@@ -17,7 +18,11 @@ ellijobs/
 ├── _redirects          # ellijobs.com → www.ellijobs.com 301
 ├── css/styles.css
 ├── js/script.js
-├── scripts/add-domains.sh
+├── .github/workflows/
+│   └── deploy.yml      # push → Cloudflare Pages 자동 배포
+├── scripts/
+│   ├── add-domains.sh
+│   └── setup-dns.sh
 └── package.json
 ```
 
@@ -30,6 +35,19 @@ npx serve .
 ```
 
 ## 배포
+
+### 자동 배포 (GitHub → Cloudflare Pages)
+
+`main` 브랜치에 푸시하면 GitHub Actions가 자동으로 Cloudflare Pages에 배포합니다.
+
+**필수: GitHub Secrets 설정**
+
+1. [ellijobs → Settings → Secrets and variables → Actions](https://github.com/fredchoi/ellijobs/settings/secrets/actions)
+2. **New repository secret** 클릭 후 추가:
+   - `CLOUDFLARE_API_TOKEN`: [API Tokens](https://dash.cloudflare.com/?to=/:account/api-tokens) → Create Token → **Edit Cloudflare Workers** 템플릿
+   - `CLOUDFLARE_ACCOUNT_ID`: 대시보드 우측 또는 [Find account ID](https://developers.cloudflare.com/fundamentals/account/find-account-and-zone-ids/)
+
+### 수동 배포
 
 ```bash
 npm run deploy
