@@ -1,6 +1,6 @@
 # ellijobs.com
 
-Elli 브랜드 랜딩 페이지. 30년 경력 개발자, AI 바이브코딩, ellipost.com 운영, ellijobs 1인 그룹 비전.
+Elli 브랜드 랜딩 페이지. 오랜경험과 노하우를 가진 개발자, AI 바이브코딩, ellipost.com 운영, ellijobs 1인 그룹 비전.
 
 ## 배포 상태
 
