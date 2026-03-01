@@ -291,11 +291,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 0.5rem;
-  background: rgba(34, 211, 238, 0.2);
-  font-size: 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.625rem;
+  background: rgba(34, 211, 238, 0.1);
 }
 
 .card-title {
