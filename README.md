@@ -9,10 +9,14 @@ ellijobs/
 ├── index.html
 ├── 404.html
 ├── favicon.svg
-├── _redirects       # ellijobs.com → www.ellijobs.com 301
+├── _redirects
 ├── css/styles.css
 ├── js/script.js
-└── scripts/         # 도메인 설정용 (선택)
+├── .github/workflows/deploy.yml   # push → 자동 배포
+└── scripts/
+    ├── setup-github-secrets.sh    # Secrets 설정
+    ├── setup-dns.sh
+    └── add-domains.sh
 ```
 
 ## 로컬 실행
@@ -21,19 +25,25 @@ ellijobs/
 python3 -m http.server 8000
 ```
 
-## 배포 (Cloudflare Pages Git 연동)
+## 배포
 
-순수 정적 페이지이므로 Cloudflare 대시보드에서 Git 저장소를 연결하면 됩니다.
+### 방법 1: GitHub Actions (권장)
 
-1. [Workers & Pages](https://dash.cloudflare.com/?to=/:account/pages) → **Create** → **Pages** → **Connect to Git**
-2. **ellijobs** 저장소 선택
-3. 빌드 설정:
-   - **Framework preset**: None
-   - **Build command**: (비워두기)
-   - **Build output directory**: `/`
-4. **Save and Deploy**
+`main` 브랜치 push 시 자동 배포. **GitHub Secrets** 필요:
 
-이후 `main` 브랜치에 push 시 자동 배포됩니다. Secrets 없음.
+```bash
+# 한 번만 실행 (gh CLI + .env 또는 환경변수)
+CLOUDFLARE_ACCOUNT_ID=xxx CLOUDFLARE_API_TOKEN=xxx ./scripts/setup-github-secrets.sh
+```
+
+또는 [Settings → Secrets → Actions](https://github.com/fredchoi/ellijobs/settings/secrets/actions)에서 수동 추가:
+- `CLOUDFLARE_ACCOUNT_ID`
+- `CLOUDFLARE_API_TOKEN`
+
+### 방법 2: Cloudflare Git 연동
+
+1. [Workers & Pages](https://dash.cloudflare.com/?to=/:account/pages) → **Create** → **Connect to Git**
+2. ellijobs 저장소 선택, Build command 비우기, Output directory `/`
 
 ## 도메인 연결
 
