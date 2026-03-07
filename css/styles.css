@@ -337,6 +337,10 @@ body {
   flex: 1;
 }
 
+.ellipost-symbol {
+  margin-bottom: 1rem;
+}
+
 .ellipost-label {
   margin: 0;
   font-size: 0.875rem;
