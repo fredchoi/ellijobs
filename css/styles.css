@@ -107,6 +107,10 @@ body {
   text-align: center;
 }
 
+.hero-symbol {
+  margin-bottom: 1.5rem;
+}
+
 .hero-label {
   margin: 0 0 1rem;
   font-size: 0.875rem;
