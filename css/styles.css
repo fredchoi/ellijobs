@@ -98,6 +98,8 @@ body {
     linear-gradient(to right, rgba(39, 39, 42, 0.4) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(39, 39, 42, 0.4) 1px, transparent 1px);
   background-size: 4rem 4rem;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 40%, black 30%, transparent 100%);
 }
 
 .hero-content {
@@ -214,8 +216,9 @@ body {
 }
 
 .btn-lg {
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 2.25rem;
   margin-top: 2rem;
+  font-size: 1rem;
 }
 
 /* Sections */
@@ -289,6 +292,12 @@ body {
   border-radius: 0.75rem;
   border: 1px solid var(--border);
   background: var(--bg-card);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #3f3f46;
+  transform: translateY(-2px);
 }
 
 .card-icon {
@@ -395,6 +404,7 @@ body {
 
 .ellipost-tags {
   flex-shrink: 0;
+  margin-top: 1.5rem;
   padding: 1.5rem 2rem;
   border-radius: 0.75rem;
   background: var(--bg-card-solid);
@@ -402,6 +412,12 @@ body {
   font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.8;
+}
+
+@media (min-width: 640px) {
+  .ellipost-tags {
+    margin-top: 0;
+  }
 }
 
 .tag-line {
@@ -433,6 +449,7 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 9999px;
   background: var(--bg-card-solid);
+  border: 1px solid #3f3f46;
   font-size: 0.875rem;
   color: var(--text-muted);
 }
