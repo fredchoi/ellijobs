@@ -1,30 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ellijobs — Vibe Coding Jobs Hub | Coming Soon</title>
-    <meta name="description" content="ellijobs — 바이브코딩 전용 일감 연결 허브. Coming Soon. Operated by ellilabs.">
-    <meta name="keywords" content="ellijobs, vibe coding, 바이브코딩, 일감 매칭, freelance, ellilabs">
+    <title>ellijobs — 바이브코딩 일감 연결 허브</title>
+    <meta name="description" content="ellijobs — 바이브코딩 전용 일감 연결 허브. 엘리랩스에서 운영 예정.">
+    <meta name="keywords" content="ellijobs, vibe coding, 바이브코딩, 일감 매칭, freelance, ellilabs, 엘리랩스">
     <meta name="author" content="ellilabs">
     <link rel="canonical" href="https://www.ellijobs.com/">
-    <link rel="alternate" hreflang="en" href="https://www.ellijobs.com/">
-    <link rel="alternate" hreflang="ko" href="https://www.ellijobs.com/">
-    <link rel="alternate" hreflang="x-default" href="https://www.ellijobs.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ellijobs">
-    <meta property="og:title" content="ellijobs — Vibe Coding Jobs Hub | Coming Soon">
-    <meta property="og:description" content="바이브코딩 전용 일감 연결 허브. Coming Soon. Operated by ellilabs.">
+    <meta property="og:title" content="ellijobs — 바이브코딩 일감 연결 허브">
+    <meta property="og:description" content="바이브코딩 전용 일감 연결 허브. 엘리랩스에서 운영 예정.">
     <meta property="og:url" content="https://www.ellijobs.com/">
     <meta property="og:locale" content="ko_KR">
-    <meta property="og:locale:alternate" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ellijobs — Vibe Coding Jobs Hub">
-    <meta name="twitter:description" content="바이브코딩 전용 일감 연결 허브. Coming Soon.">
+    <meta name="twitter:title" content="ellijobs — 바이브코딩 일감 연결 허브">
+    <meta name="twitter:description" content="바이브코딩 전용 일감 연결 허브. 엘리랩스에서 운영 예정.">
 
     <meta name="robots" content="index, follow">
 
@@ -34,11 +30,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-      .lang-ko { display: none !important; }
-      .lang-en { display: inline !important; }
-      html.is-ko .lang-ko { display: inline !important; }
-      html.is-ko .lang-en { display: none !important; }
-
       .soon-wrap {
         min-height: 100vh;
         display: flex;
@@ -56,18 +47,6 @@
       .soon-symbol {
         display: inline-flex;
         margin-bottom: 2rem;
-      }
-      .soon-badge {
-        display: inline-block;
-        padding: 0.4rem 0.9rem;
-        border: 1px solid rgba(34, 211, 238, 0.4);
-        border-radius: 999px;
-        color: var(--accent);
-        font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        margin-bottom: 1.5rem;
       }
       .soon-title {
         font-size: clamp(2rem, 5vw, 3.25rem);
@@ -103,25 +82,9 @@
         font-size: 0.8rem;
         color: rgba(255, 255, 255, 0.4);
       }
-      .lang-toggle-fixed {
-        position: fixed;
-        top: 1.25rem;
-        right: 1.25rem;
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        color: #fff;
-        padding: 0.45rem 0.85rem;
-        border-radius: 999px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        cursor: pointer;
-        font-family: inherit;
-      }
-      .lang-toggle-fixed:hover { background: rgba(255, 255, 255, 0.1); }
     </style>
   </head>
   <body>
-    <button class="lang-toggle-fixed" id="langToggle" aria-label="Switch language">KR</button>
     <main class="soon-wrap">
       <div class="hero-grid"></div>
       <div class="soon-inner">
@@ -145,31 +108,15 @@
           </svg>
         </div>
 
-        <div class="soon-badge">Coming Soon</div>
-
-        <h1 class="soon-title">
-          <span class="lang-ko">ellijobs</span>
-          <span class="lang-en">ellijobs</span>
-        </h1>
+        <h1 class="soon-title">ellijobs</h1>
 
         <p class="soon-desc">
-          <span class="lang-ko">
-            바이브코딩 전용 일감 연결 허브.<br>
-            AI와 함께 코드를 짓는 사람들을 위한 새로운 일감 매칭 플랫폼을 준비 중입니다.
-          </span>
-          <span class="lang-en">
-            A jobs hub built for vibe coders.<br>
-            A new matching platform for people who build with AI — coming soon.
-          </span>
+          바이브코딩 전용 일감 연결 허브.<br>
+          AI와 함께 코드를 짓는 사람들을 위한 새로운 일감 매칭 플랫폼을 준비 중입니다.
         </p>
 
         <div class="soon-operator">
-          <span class="lang-ko">
-            본 서비스는 <a href="https://ellilabs.com" target="_blank" rel="noopener noreferrer">엘리랩스</a>에서 운영 예정입니다.
-          </span>
-          <span class="lang-en">
-            Operated by <a href="https://ellilabs.com" target="_blank" rel="noopener noreferrer">ellilabs</a>.
-          </span>
+          본 서비스는 <a href="https://ellilabs.com" target="_blank" rel="noopener noreferrer">엘리랩스</a>에서 운영 예정입니다.
         </div>
 
         <p class="soon-footer">© <span id="year"></span> ellijobs · ellilabs</p>
@@ -178,20 +125,6 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-
-      const toggle = document.getElementById('langToggle');
-      const html = document.documentElement;
-      const saved = localStorage.getItem('lang');
-      if (saved === 'ko') {
-        html.classList.add('is-ko');
-        toggle.textContent = 'EN';
-      }
-      toggle.addEventListener('click', () => {
-        const isKo = html.classList.toggle('is-ko');
-        toggle.textContent = isKo ? 'EN' : 'KR';
-        html.lang = isKo ? 'ko' : 'en';
-        localStorage.setItem('lang', isKo ? 'ko' : 'en');
-      });
     </script>
   </body>
 </html>
