@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ellijobs — Elli | Builder & Craftsman</title>
-    <meta name="description" content="끈기로 시작하고 장인정신으로 끝내는 빌더 Elli. 이메일 인프라 SaaS ellipost.com을 만들고 직접 운영합니다. Builder Elli crafts products that last.">
-    <meta name="keywords" content="ellijobs, Elli, ellipost, sellify, 이메일 SaaS, email infrastructure, 제휴마케팅 자동화, affiliate marketing, 빌더, builder, craftsman, 장인정신, SaaS">
-    <meta name="author" content="Elli">
+    <title>ellijobs — Vibe Coding Jobs Hub | Coming Soon</title>
+    <meta name="description" content="ellijobs — 바이브코딩 전용 일감 연결 허브. Coming Soon. Operated by ellilabs.">
+    <meta name="keywords" content="ellijobs, vibe coding, 바이브코딩, 일감 매칭, freelance, ellilabs">
+    <meta name="author" content="ellilabs">
     <link rel="canonical" href="https://www.ellijobs.com/">
     <link rel="alternate" hreflang="en" href="https://www.ellijobs.com/">
     <link rel="alternate" hreflang="ko" href="https://www.ellijobs.com/">
@@ -15,23 +15,17 @@
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="ellijobs">
-    <meta property="og:title" content="ellijobs — Elli | Builder & Craftsman">
-    <meta property="og:description" content="끈기로 시작하고 장인정신으로 끝내는 빌더 Elli. 이메일 인프라 SaaS ellipost.com을 만들고 직접 운영합니다.">
+    <meta property="og:title" content="ellijobs — Vibe Coding Jobs Hub | Coming Soon">
+    <meta property="og:description" content="바이브코딩 전용 일감 연결 허브. Coming Soon. Operated by ellilabs.">
     <meta property="og:url" content="https://www.ellijobs.com/">
-    <meta property="og:image" content="https://www.ellijobs.com/og-image.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     <meta property="og:locale" content="ko_KR">
     <meta property="og:locale:alternate" content="en_US">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="ellijobs — Elli | Builder & Craftsman">
-    <meta name="twitter:description" content="끈기로 시작하고 장인정신으로 끝내는 빌더 Elli. ellipost.com 이메일 인프라 SaaS.">
-    <meta name="twitter:image" content="https://www.ellijobs.com/og-image.png">
+    <meta name="twitter:title" content="ellijobs — Vibe Coding Jobs Hub">
+    <meta name="twitter:description" content="바이브코딩 전용 일감 연결 허브. Coming Soon.">
 
-    <!-- Naver -->
-    <meta name="naver-site-verification" content="NAVER_VERIFICATION_CODE">
     <meta name="robots" content="index, follow">
 
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -44,315 +38,144 @@
       .lang-en { display: inline !important; }
       html.is-ko .lang-ko { display: inline !important; }
       html.is-ko .lang-en { display: none !important; }
+
+      .soon-wrap {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+        position: relative;
+      }
+      .soon-inner {
+        max-width: 42rem;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      .soon-symbol {
+        display: inline-flex;
+        margin-bottom: 2rem;
+      }
+      .soon-badge {
+        display: inline-block;
+        padding: 0.4rem 0.9rem;
+        border: 1px solid rgba(34, 211, 238, 0.4);
+        border-radius: 999px;
+        color: var(--accent);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+      }
+      .soon-title {
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        font-weight: 700;
+        line-height: 1.15;
+        margin: 0 0 1.25rem;
+      }
+      .soon-desc {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.72);
+        margin: 0 0 2rem;
+      }
+      .soon-operator {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.6rem 1.1rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 999px;
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.78);
+      }
+      .soon-operator a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .soon-operator a:hover { text-decoration: underline; }
+      .soon-footer {
+        margin-top: 3rem;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.4);
+      }
+      .lang-toggle-fixed {
+        position: fixed;
+        top: 1.25rem;
+        right: 1.25rem;
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #fff;
+        padding: 0.45rem 0.85rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .lang-toggle-fixed:hover { background: rgba(255, 255, 255, 0.1); }
     </style>
   </head>
   <body>
-    <div class="page">
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-grid"></div>
-        <button class="lang-toggle" id="langToggle" aria-label="Switch language">KR</button>
-        <div class="hero-content">
-          <div class="hero-symbol">
-            <svg width="72" height="72" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="hero-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#7B6CF6"/>
-                  <stop offset="1" stop-color="#00CEC9"/>
-                </linearGradient>
-                <clipPath id="hero-clip">
-                  <rect x="100" y="110" width="312" height="152"/>
-                  <rect x="100" y="262" width="230" height="150"/>
-                </clipPath>
-              </defs>
-              <rect width="512" height="512" rx="114" fill="url(#hero-grad)"/>
-              <g transform="rotate(-45, 256, 262)">
-                <circle cx="256" cy="262" r="130" fill="none" stroke="#fff" stroke-width="48" clip-path="url(#hero-clip)"/>
-                <line x1="256" y1="262" x2="390" y2="262" stroke="#fff" stroke-width="48" stroke-linecap="round"/>
-              </g>
-            </svg>
-          </div>
-          <p class="hero-label">ellijobs</p>
-          <h1 class="hero-title">
-            <span class="lang-ko">안녕하세요, <span class="accent">Elli</span>입니다</span>
-            <span class="lang-en">Hi, I'm <span class="accent">Elli</span></span>
-          </h1>
-          <p class="hero-desc">
-            <span class="lang-ko">
-              끈기로 시작하고, 장인정신으로 끝냅니다.<br class="br-desktop">
-              이메일 인프라 ellipost.com을 만들고 직접 운영합니다.
-            </span>
-            <span class="lang-en">
-              I start with grit and finish with craft.<br class="br-desktop">
-              Building and running ellipost.com — email infrastructure that delivers.
-            </span>
-          </p>
-          <div class="hero-actions">
-            <a href="https://auctionfree.ellijobs.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">auctionfree →</a>
-            <a href="#vision" class="btn btn-secondary">Vision →</a>
-          </div>
+    <button class="lang-toggle-fixed" id="langToggle" aria-label="Switch language">KR</button>
+    <main class="soon-wrap">
+      <div class="hero-grid"></div>
+      <div class="soon-inner">
+        <div class="soon-symbol">
+          <svg width="84" height="84" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="hero-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#7B6CF6"/>
+                <stop offset="1" stop-color="#00CEC9"/>
+              </linearGradient>
+              <clipPath id="hero-clip">
+                <rect x="100" y="110" width="312" height="152"/>
+                <rect x="100" y="262" width="230" height="150"/>
+              </clipPath>
+            </defs>
+            <rect width="512" height="512" rx="114" fill="url(#hero-grad)"/>
+            <g transform="rotate(-45, 256, 262)">
+              <circle cx="256" cy="262" r="130" fill="none" stroke="#fff" stroke-width="48" clip-path="url(#hero-clip)"/>
+              <line x1="256" y1="262" x2="390" y2="262" stroke="#fff" stroke-width="48" stroke-linecap="round"/>
+            </g>
+          </svg>
         </div>
-      </section>
 
-      <!-- What I do -->
-      <section class="section section-dark">
-        <div class="container">
-          <h2 class="section-title">What I Do</h2>
-          <div class="cards">
-            <div class="card">
-              <div class="card-icon"><img src="icons/thinking.svg" alt="" width="28" height="28"></div>
-              <h3 class="card-title">Product Thinking</h3>
-              <p class="card-desc">
-                <span class="lang-ko">쉬운 길 대신 올바른 길. 문제의 본질이 보일 때까지 파고듭니다.</span>
-                <span class="lang-en">The right path, not the easy one. I dig until I see the root of the problem.</span>
-              </p>
-            </div>
-            <div class="card">
-              <div class="card-icon"><img src="icons/lightning.svg" alt="" width="28" height="28"></div>
-              <h3 class="card-title">AI-Powered Build</h3>
-              <p class="card-desc">
-                <span class="lang-ko">AI는 도구일 뿐, 기준은 내가 세웁니다. 품질에 타협 없이 완성합니다.</span>
-                <span class="lang-en">AI is my tool, not my standard. I set the bar and ship nothing less.</span>
-              </p>
-            </div>
-            <div class="card">
-              <div class="card-icon"><img src="icons/rocket.svg" alt="" width="28" height="28"></div>
-              <h3 class="card-title">Ship & Operate</h3>
-              <p class="card-desc">
-                <span class="lang-ko">출시는 시작일 뿐. 직접 운영하며 더 나은 제품이 될 때까지 갈고닦습니다.</span>
-                <span class="lang-en">Launch is day one. I run it, refine it, and keep going until it's right.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <div class="soon-badge">Coming Soon</div>
 
-      <!-- ellipost.com -->
-      <section class="section">
-        <div class="container">
-          <div class="ellipost-card">
-            <div class="ellipost-main">
-              <div class="ellipost-symbol">
-                <svg width="48" height="48" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="ep-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#7B6CF6"/>
-                      <stop offset="1" stop-color="#00CEC9"/>
-                    </linearGradient>
-                    <clipPath id="ep-clip">
-                      <rect x="100" y="110" width="312" height="152"/>
-                      <rect x="100" y="262" width="230" height="150"/>
-                    </clipPath>
-                  </defs>
-                  <rect width="512" height="512" rx="114" fill="url(#ep-grad)"/>
-                  <g transform="rotate(-45, 256, 262)">
-                    <circle cx="256" cy="262" r="130" fill="none" stroke="#fff" stroke-width="48" clip-path="url(#ep-clip)"/>
-                    <line x1="256" y1="262" x2="390" y2="262" stroke="#fff" stroke-width="48" stroke-linecap="round"/>
-                  </g>
-                </svg>
-              </div>
-              <p class="ellipost-label">
-                <span class="lang-ko">공사중</span>
-                <span class="lang-en">Coming Soon</span>
-              </p>
-              <h2 class="ellipost-title">
-                <span style="opacity: 0.5;">ellipost.com</span>
-              </h2>
-              <p class="ellipost-desc">
-                <span class="lang-ko">마케팅·알림·트랜잭션 이메일을 하나의 API로. 대시보드 하나면 이메일 인프라가 완성됩니다.</span>
-                <span class="lang-en">One API for marketing, alerts, and transactional emails. One dashboard to run your entire email infrastructure.</span>
-              </p>
-            </div>
-            <div class="ellipost-tags">
-              <span class="lang-ko">
-                <span class="tag-line">#</span> 이메일 발송 SaaS<br>
-                <span class="tag-line">#</span> API · 대시보드<br>
-                <span class="tag-line">#</span> 마케팅 · 알림
-              </span>
-              <span class="lang-en">
-                <span class="tag-line">#</span> Email SaaS<br>
-                <span class="tag-line">#</span> API · Dashboard<br>
-                <span class="tag-line">#</span> Marketing · Alerts
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+        <h1 class="soon-title">
+          <span class="lang-ko">ellijobs</span>
+          <span class="lang-en">ellijobs</span>
+        </h1>
 
-      <!-- auctionfree.ellijobs.com -->
-      <section class="section section-dark">
-        <div class="container">
-          <div class="ellipost-card">
-            <div class="ellipost-main">
-              <div class="ellipost-symbol">
-                <svg width="48" height="48" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="af-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#7B6CF6"/>
-                      <stop offset="1" stop-color="#00CEC9"/>
-                    </linearGradient>
-                    <clipPath id="af-clip">
-                      <rect x="100" y="110" width="312" height="152"/>
-                      <rect x="100" y="262" width="230" height="150"/>
-                    </clipPath>
-                  </defs>
-                  <rect width="512" height="512" rx="114" fill="url(#af-grad)"/>
-                  <g transform="rotate(-45, 256, 262)">
-                    <circle cx="256" cy="262" r="130" fill="none" stroke="#fff" stroke-width="48" clip-path="url(#af-clip)"/>
-                    <line x1="256" y1="262" x2="390" y2="262" stroke="#fff" stroke-width="48" stroke-linecap="round"/>
-                  </g>
-                </svg>
-              </div>
-              <p class="ellipost-label">Live Product</p>
-              <h2 class="ellipost-title">
-                <a href="https://auctionfree.ellijobs.com" target="_blank" rel="noopener noreferrer">auctionfree.ellijobs.com</a>
-              </h2>
-              <p class="ellipost-desc">
-                <span class="lang-ko">부동산 경매 정보를 한눈에. 법원 경매 물건 검색부터 분석까지, 누구나 무료로 시작할 수 있습니다.</span>
-                <span class="lang-en">Real estate auction info at a glance. Search and analyze court auction properties — free for everyone.</span>
-              </p>
-              <a href="https://auctionfree.ellijobs.com" target="_blank" rel="noopener noreferrer" class="ellipost-link">
-                <span class="lang-ko">바로 시작하기</span>
-                <span class="lang-en">Get Started</span>
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
-            <div class="ellipost-tags">
-              <span class="lang-ko">
-                <span class="tag-line">#</span> 부동산 경매<br>
-                <span class="tag-line">#</span> 법원 경매 검색<br>
-                <span class="tag-line">#</span> 무료 · 분석
-              </span>
-              <span class="lang-en">
-                <span class="tag-line">#</span> Real Estate Auction<br>
-                <span class="tag-line">#</span> Court Auction Search<br>
-                <span class="tag-line">#</span> Free · Analytics
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p class="soon-desc">
+          <span class="lang-ko">
+            바이브코딩 전용 일감 연결 허브.<br>
+            AI와 함께 코드를 짓는 사람들을 위한 새로운 일감 매칭 플랫폼을 준비 중입니다.
+          </span>
+          <span class="lang-en">
+            A jobs hub built for vibe coders.<br>
+            A new matching platform for people who build with AI — coming soon.
+          </span>
+        </p>
 
-      <!-- sellify.co.kr -->
-      <section class="section">
-        <div class="container">
-          <div class="ellipost-card">
-            <div class="ellipost-main">
-              <div class="ellipost-symbol">
-                <svg width="48" height="48" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="sf-grad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
-                      <stop stop-color="#7B6CF6"/>
-                      <stop offset="1" stop-color="#00CEC9"/>
-                    </linearGradient>
-                    <clipPath id="sf-clip">
-                      <rect x="100" y="110" width="312" height="152"/>
-                      <rect x="100" y="262" width="230" height="150"/>
-                    </clipPath>
-                  </defs>
-                  <rect width="512" height="512" rx="114" fill="url(#sf-grad)"/>
-                  <g transform="rotate(-45, 256, 262)">
-                    <circle cx="256" cy="262" r="130" fill="none" stroke="#fff" stroke-width="48" clip-path="url(#sf-clip)"/>
-                    <line x1="256" y1="262" x2="390" y2="262" stroke="#fff" stroke-width="48" stroke-linecap="round"/>
-                  </g>
-                </svg>
-              </div>
-              <p class="ellipost-label">Live Product</p>
-              <h2 class="ellipost-title">
-                <a href="https://www.sellify.co.kr" target="_blank" rel="noopener noreferrer">sellify.co.kr</a>
-              </h2>
-              <p class="ellipost-desc">
-                <span class="lang-ko">뭘 팔아야 하는지 알려주고, 만들어주고, 뿌려줍니다. 제휴마케팅 수익 자동화 엔진.</span>
-                <span class="lang-en">Discover what sells, auto-generate content, and distribute everywhere. Affiliate marketing revenue automation engine.</span>
-              </p>
-              <a href="https://www.sellify.co.kr" target="_blank" rel="noopener noreferrer" class="ellipost-link">
-                <span class="lang-ko">바로 시작하기</span>
-                <span class="lang-en">Get Started</span>
-                <span aria-hidden="true">→</span>
-              </a>
-            </div>
-            <div class="ellipost-tags">
-              <span class="lang-ko">
-                <span class="tag-line">#</span> 제휴마케팅 자동화<br>
-                <span class="tag-line">#</span> AI 콘텐츠 생성<br>
-                <span class="tag-line">#</span> 수익 최적화
-              </span>
-              <span class="lang-en">
-                <span class="tag-line">#</span> Affiliate Automation<br>
-                <span class="tag-line">#</span> AI Content Generation<br>
-                <span class="tag-line">#</span> Revenue Optimization
-              </span>
-            </div>
-          </div>
+        <div class="soon-operator">
+          <span class="lang-ko">
+            본 서비스는 <a href="https://ellilabs.com" target="_blank" rel="noopener noreferrer">엘리랩스</a>에서 운영 예정입니다.
+          </span>
+          <span class="lang-en">
+            Operated by <a href="https://ellilabs.com" target="_blank" rel="noopener noreferrer">ellilabs</a>.
+          </span>
         </div>
-      </section>
 
-      <!-- Vision -->
-      <section id="vision" class="section section-dark" style="scroll-margin-top: 2rem;">
-        <div class="container container-center">
-          <h2 class="section-title">Vision</h2>
-          <p class="vision-desc">
-            <span class="lang-ko">
-              시작한 것은 반드시 끝냅니다.<br>
-              <span class="accent">되는 방법을 찾을 때까지</span> 멈추지 않습니다.
-            </span>
-            <span class="lang-en">
-              What I start, I finish.<br>
-              <span class="accent">I don't stop until I find a way</span> to make it work.
-            </span>
-          </p>
-          <div class="vision-tags">
-            <span class="pill">Craftsmanship</span>
-            <span class="pill">Perseverance</span>
-            <span class="pill">Never Quit</span>
-          </div>
-        </div>
-      </section>
+        <p class="soon-footer">© <span id="year"></span> ellijobs · ellilabs</p>
+      </div>
+    </main>
 
-      <!-- CTA -->
-      <section class="section">
-        <div class="container container-narrow container-center">
-          <h2 class="section-title">Let's Connect</h2>
-          <p class="cta-desc">
-            <span class="lang-ko">함께 만들어갈 이야기가 있다면, 편하게 연락주세요.</span>
-            <span class="lang-en">Have something worth building? Let's talk.</span>
-          </p>
-          <a href="https://auctionfree.ellijobs.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
-            auctionfree <span aria-hidden="true">→</span>
-          </a>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="container footer-inner">
-          <p class="footer-copy">© <span id="year"></span> ellijobs · Elli</p>
-          <a href="https://auctionfree.ellijobs.com" target="_blank" rel="noopener noreferrer" class="footer-link">auctionfree.ellijobs.com</a>
-        </div>
-      </footer>
-    </div>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Elli",
-      "url": "https://www.ellijobs.com",
-      "jobTitle": "Builder & Craftsman",
-      "description": "끈기로 시작하고 장인정신으로 끝내는 빌더. 이메일 인프라 SaaS ellipost.com을 만들고 직접 운영합니다.",
-      "sameAs": ["https://ellipost.com", "https://www.sellify.co.kr"],
-      "knowsAbout": ["Email Infrastructure", "SaaS", "Product Development", "Affiliate Marketing Automation"],
-      "makesOffer": {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "SoftwareApplication",
-          "name": "ellipost",
-          "url": "https://ellipost.com",
-          "applicationCategory": "BusinessApplication",
-          "description": "One API for marketing, alerts, and transactional emails."
-        }
-      }
-    }
-    </script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
 
